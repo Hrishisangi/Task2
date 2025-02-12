@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactForm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+ <!--  Header Section-->
+<header class="flex flex-wrap justify-between items-center px-7 sm:px-12 md:px-28 py-8 relative">
+    
+    <!-- Logo Section: -->
+    <div>
+        <img src="assets/logo-1.png" alt="startup landing page" class="w-32 md:w-40">
+    </div>
+    
+    <!--Navigation Container -->
+    <div class="w-full md:w-auto flex justify-center md:justify-end mt-4 md:mt-0">
+        
+        <!--Navigation Links-->
+        <nav class="flex flex-wrap justify-center md:justify-end space-x-6 md:space-x-10 font-semibold text-gray-600">
+            
+            <!-- 
+              Navigation Items
+            -->
+            <a href="#" class="hover:text-gray-800">Pricing</a>
+            <a href="#" class="hover:text-gray-800">Support</a>
+            <a href="#" class="hover:text-gray-800">Register</a>
+            
+            <!-- 
+              "Get Started" Button-->
+            <a href="#" class="text-green-500 font-bold">Get Started</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Pink section starts here -->
+<div class="bg-[#FFF7F5] w-full py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 relative"> <!-- Pink bg box area which is padded vertically (top , bottom) -->
+    <div class="flex flex-wrap space-x-2 sm:space-x-4 md:space-x-6 font-semibold text-3xl x-7 sm:px-12 md:px-28 py-8"> <!-- line and contact us text with responsivity and -->
+        <p>______</p>
+        <h1>Contact Us</h1>
+    </div>
+    <div class="flex flex-col sm:flex-row space-x-8 sm:space-x-16 md:space-x-60 x-7 sm:px-12 md:px-28 py-8"> <!-- box for containing 3 elements mail , phn , location-->
+        <div class="flex flex-wrap space-x-2 sm:space-x-4 md:space-x-6"> <!-- for address box-->
+            <img class="w-12 h-12" src="assets/location.png" alt="Location Image">
+            <div>
+                <h1 class="font-semibold text-2xl">Address</h1>
+                <h1>Jaipur Rajasthan INDIA</h1>
+                <h1> Pin 342087  </h1> 
+            </div>
+        </div> 
+        <!-- for Mail-->
+        <div class="flex flex-wrap space-x-2 sm:space-x-4 md:space-x-6"> <!-- for Phone box-->
+            <img class="w-12 h-12" src="assets/phone.png" alt="Phn Image">
+            <div>
+                <h1 class="font-semibold text-2xl">Call us</h1>
+                <h1>+91 98765 43210</h1>
+            </div>
+        </div> 
+        <!-- for phn-->
+        <div class="flex flex-wrap space-x-2 sm:space-x-4 md:space-x-6"> <!-- for Mail box-->
+            <img class="w-12 h-12" src="assets/mail.png" alt="Mail Image">
+            <div>
+                <h1 class="font-semibold text-2xl">Email us</h1>
+                <h1>info@test.com</h1>
+            </div>
+        </div> 
+    </div>
+</div>
+
+ <!-- white bg section Heading , form , map  starts here-->
+<div class="bg-white py-8 sm:py-12 md:py-16 px-7 sm:px-12 md:px-28"> <!-- white bg section -->
+    <div class=" font-bold text-2xl text-center py-4 sm:py-8 md:py-12"> <!-- For heading -->
+        <p> Get in touch with us.</p>
+        <p> We're here to assist you.</p>
+    </div> 
+
+<!-- Form begins here-->
+    <div class="bg-[#F9FAFC] py-8 sm:py-12 md:py-16 px-4 sm:px-11 md:px-16 rounded-2xl justify-center items-center scale-90 "> <!-- For form -->
+        <form class= "grid grid-cols-2 gap-[5rem]">
+            <div class="text-left items-start"> 
+                <label class=" block text-gray-700 text-lg">Full Name</label>
+                <input class="border-b-2 bg-[#F9FAFC] w-full" type="text">   
+            </div>
+            <div class="text-left items-start"> 
+                <label class=" block text-gray-700 text-lg">Email address</label>
+                <input class="border-b-2 bg-[#F9FAFC] w-full" type="email">   
+            </div>
+            <div class="text-left items-start"> 
+                <label class=" block text-gray-700 text-lg">Phone number </label>
+                <input class="border-b-2 bg-[#F9FAFC] w-full" type="text">   
+            </div>
+            <div class="text-left items-start"> 
+                <label class=" block text-gray-700 text-lg">Date of birth</label>
+                <input class="border-b-2 bg-[#F9FAFC] w-full" type="date">   
+            </div>
+            <div class="text-left items-start"> 
+                <label class="block text-gray-700 text-lg">Gender</label>
+                <select class="border-b-2 bg-[#F9FAFC] w-full">
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>   
+            </div>
+            <div class="text-left items-start"> 
+                <label class=" block text-gray-700 text-lg">City</label>
+                <input class="border-b-2 bg-[#F9FAFC] w-full" type="text">   
+            </div>
+            <div class="text-left items-start"> 
+                <label class=" block text-gray-700 text-lg">State</label>
+                <input class="border-b-2 bg-[#F9FAFC] w-full" type="text">   
+            </div>
+            <div class="text-left items-start"> 
+                <label class=" block text-gray-700 text-lg">Country</label>
+                <input class="border-b-2 bg-[#F9FAFC] w-full" type="text">   
+            </div>
+            <div class="text-left items-start"> 
+                <label class=" block text-gray-700 text-lg">Address</label>
+                <input class="border-b-2 bg-[#F9FAFC] w-full" type="text">   
+            </div>
+            <div class="text-left items-start "> 
+                <label class=" block text-gray-700 text-lg">Message</label>
+                <textarea class="border-b-2 bg-[#F9FAFC] w-full"></textarea>   
+            </div>
+            <div class="space-y-4 text-lg">
+                <div>
+                    <p>Request a counselling session</p>
+                </div>
+                <div class="flex space-x-4">
+                    <label class="flex items-center space-x-2">
+                      <input type="radio" name="choice" value="1" class="w-4 h-4" />
+                      <span class="text-gray-700">Yes</span>
+                    </label>
+                  
+                    <label class="flex items-center space-x-2">
+                      <input type="radio" name="choice" value="2" class="w-4 h-4" />
+                      <span class="text-gray-700">No</span>
+                    </label>
+                </div>    
+            </div>
+            <div class="text-left">
+                <label class="block text-gray-700 text-lg">Upload your CV/Resume</label>
+                <div class="flex items-center border-b border-gray-300 py-2 cursor-pointer">
+                    <label for="file-upload" class="flex items-center cursor-pointer">
+                        <img src="assets/cloud.png" alt="Upload Icon" class="w-4 h-4 text-gray-400 mr-2">
+                        <span class="text-gray-700 text-sm">Choose file</span>
+                    </label>
+                    <input type="file" id="file-upload" class="hidden">
+                </div>
+            </div>
+            <div>
+                <label> 
+                    <input type="checkbox" id="terms-checkbox" name="terms" class="w-4 h-4">
+                    <span class="text-lg"> Agree terms and conditions</span> 
+                </label>
+            </div>
+            <div>
+            </div>
+            <div>
+                <label>
+                  <button class="px-6 py-3 w-full bg-[#28DDB2] text-white text-lg font-semibold hover:bg-[#22C9A5] transition duration-300">
+                    Submit Information
+                  </button>
+                </label>
+            </div>              
+        </form>
+    </div> 
+<!-- Form Ends here-->
+
+<!-- Map image-->
+    <div class=" flex justify-center">
+        <img src="assets/map.png" class="w-full">
+    </div> 
+</div>
+<!-- Map image ends here-->
+
+<!-- Pink section starts here-->
+<div class="bg-[#FFF7F5] w-full py-8 sm:py-12 md:py-16 px-4 sm:px-8 md:px-16 relative">
+    <div class="text-center py-4 sm:py-8 md:py-12"> <!-- subscribe -->
+        <p class="font-semibold text-4xl">Subscribe to Our Newsletter for </p>
+        <p class="font-semibold text-4xl">Design Insights</p> 
+
+    </div>
+    <div class="text-center"> <!-- para -->
+        <P>Be the first to discover trends, inspirations, and special offers as we </P>
+        <p>bring the world of design directly to your inbox</P>
+
+    </div>
+  
+    <div class="relative w-full max-w-md mx-auto mt-6"> <!-- Input email and button-->
+        <div class="flex flex-col sm:flex-row items-center sm:items-stretch w-full bg-white">
+          <input 
+            type="text" 
+            placeholder="Enter your email address" 
+            class="w-full sm:flex-1 py-2 px-4 focus:outline-none"
+          />
+          <button 
+            class="w-full sm:w-auto mt-2 sm:mt-0 px-6 py-2 bg-[#28ddb3bb] text-white hover:bg-[#28DDB2]">
+            Subscribe
+          </button>
+        </div>
+    </div>     
+</div>
+<!-- FAQ Total section-->
+<div class="text-center bg-white py-8 sm:py-12 md:py-16"> 
+    <div> <!-- heading and para-->
+        <p class="font-semibold text-2xl">Do you have any quesiton</p><br>
+        <p>Our support team ready to help you, please contact with them</p>
+    </div>
+
+     <!-- questions with interactivity-->
+    <div id="faq-accordion" class="w-full max-w-2xl mx-auto mt-6  space-y-2">
+    <!-- FAQ 1 -->
+    <div class="faq-item border-b">
+        <button class="faq-button flex w-full p-4 text-left items-center space-x-2">
+            <img src="assets/plus.png" class="faq-icon w-5 h-5 transition-all" />
+            <span class="font-medium">How to contact with riders emergency?</span>
+        </button>
+        <div class="faq-content p-4 text-gray-600 text-start" style="display: none;">
+            Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.
+        </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="faq-item border-b">
+        <button class="faq-button flex w-full p-4 text-left items-center space-x-2">
+            <img src="assets/plus.png" class="faq-icon w-5 h-5 transition-all" />
+            <span class="font-medium">App installation failed, how to update system information?</span>
+        </button>
+        <div class="faq-content p-4 text-gray-600 text-start" style="display: none;">
+            Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.
+        </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="faq-item border-b">
+        <button class="faq-button flex w-full p-4 text-left items-center space-x-2">
+            <img src="assets/plus.png" class="faq-icon w-5 h-5 transition-all" />
+            <span class="font-medium">Website response taking time, how to improve?</span>
+        </button>
+        <div class="faq-content p-4 text-gray-600 text-start" style="display: none;">
+            Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.
+        </div>
+    </div>
+
+    <!-- FAQ 4 -->
+    <div class="faq-item border-b">
+        <button class="faq-button flex w-full p-4 text-left items-center space-x-2">
+            <img src="assets/plus.png" class="faq-icon w-5 h-5 transition-all" />
+            <span class="font-medium">New update fixed all bugs and issues</span>
+        </button>
+        <div class="faq-content p-4 text-gray-600 text-start" style="display: none;">
+            Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- footer begins here-->
+<div class="bg-gray-100">
+    <footer class="w-full text-gray-700 text-sm py-10">
+        <div class="max-w-screen-xl mx-auto px-5">
+            <!-- Footer Grid Layout -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-start">
+                <!-- Company -->
+                <div>
+                    <h3 class="font-semibold">Company</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="#" class="hover:underline">About</a></li>
+                        <li><a href="#" class="hover:underline">Affiliate</a></li>
+                        <li><a href="#" class="hover:underline">Careers & Culture</a></li>
+                        <li><a href="#" class="hover:underline">Blog</a></li>
+                        <li><a href="#" class="hover:underline">Press</a></li>
+                    </ul>
+                </div>
+                
+                <!-- About Us -->
+                <div>
+                    <h3 class="font-semibold">About Us</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="#" class="hover:underline">Support Center</a></li>
+                        <li><a href="#" class="hover:underline">Customer Support</a></li>
+                        <li><a href="#" class="hover:underline">About Us</a></li>
+                        <li><a href="#" class="hover:underline">Copyright</a></li>
+                        <li><a href="#" class="hover:underline">Popular Campaign</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Information -->
+                <div>
+                    <h3 class="font-semibold">Our Information</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="#" class="hover:underline">Return Policy</a></li>
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:underline">Site Map</a></li>
+                        <li><a href="#" class="hover:underline">Store Hours</a></li>
+                    </ul>
+                </div>
+
+                <!-- My Account -->
+                <div>
+                    <h3 class="font-semibold">My Account</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="#" class="hover:underline">Press Inquiries</a></li>
+                        <li><a href="#" class="hover:underline">Social Media</a></li>
+                        <li><a href="#" class="hover:underline">Directories</a></li>
+                        <li><a href="#" class="hover:underline">Images & B-roll</a></li>
+                        <li><a href="#" class="hover:underline">Permissions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Policy -->
+                <div>
+                    <h3 class="font-semibold">Policy</h3>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="#" class="hover:underline">Application Security</a></li>
+                        <li><a href="#" class="hover:underline">Software Principles</a></li>
+                        <li><a href="#" class="hover:underline">Unwanted Software Policy</a></li>
+                        <li><a href="#" class="hover:underline">Responsible Supply Chain</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="mt-10 flex flex-col md:flex-row items-center md:items-start justify-between border-t pt-5">
+                <!-- Logo & Copyright -->
+                <div class="flex items-center space-x-2">
+                    <img src="assets/logo-1.png" alt="StartupLanding Logo" class="w-[12.2rem] h-[2.3rem]">
+                    <span class="text-gray-600 text-center md:text-left break-words">StartupLanding &copy; 2019 YourName, Inc</span>
+                </div>
+
+                <!-- Footer Links -->
+                <ul class="flex flex-wrap justify-center md:justify-end space-x-3 mt-4 md:mt-0">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Advertise</a></li>
+                    <li><a href="#" class="hover:underline">Supports</a></li>
+                    <li><a href="#" class="hover:underline">Marketing</a></li>
+                    <li><a href="#" class="hover:underline">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- footer ends here-->
+
+<!-- This is the JS code for FAQ interactivity and  form validation-->
+<script defer>
+    document.addEventListener("DOMContentLoaded", function () {
+    // FAQ Toggle Functionality
+    document.querySelectorAll(".faq-button").forEach(button => {
+        button.addEventListener("click", function () {
+            let content = this.nextElementSibling;
+            let icon = this.querySelector(".faq-icon");
+
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                icon.src = "assets/minus.png";
+            } else {
+                content.style.display = "none";
+                icon.src = "assets/plus.png";
+            }
+        });
+    });
+
+    // Form Validation Functionality
+    const form = document.querySelector("form");
+    if (!form) return;
+
+    const inputs = form.querySelectorAll("input[type='text'], input[type='email'], input[type='date'], input[type='file']");
+    const messageInput = form.querySelector("textarea");
+    const cityInput = Array.from(inputs).find(input => input.previousElementSibling && input.previousElementSibling.textContent.includes("City"));
+    const stateInput = Array.from(inputs).find(input => input.previousElementSibling && input.previousElementSibling.textContent.includes("State"));
+    const countryInput = Array.from(inputs).find(input => input.previousElementSibling && input.previousElementSibling.textContent.includes("Country"));
+    const phoneInput = Array.from(inputs).find(input => input.previousElementSibling && input.previousElementSibling.textContent.includes("Phone number"));
+    const emailInput = Array.from(inputs).find(input => input.previousElementSibling && input.previousElementSibling.textContent.includes("Email address"));
+    const fullNameInput = Array.from(inputs).find(input => input.previousElementSibling && input.previousElementSibling.textContent.includes("Full Name"));
+    const genderSelect = form.querySelector("select");
+    const checkbox = form.querySelector("input[type='checkbox']");
+    const button = form.querySelector("button");
+
+    function validateInput(input) {
+        const value = input.value.trim();
+        let error = "";
+        
+        if (!value) {
+            error = `${input.previousElementSibling.textContent} is required.`;
+        } else if (input === emailInput) {
+            if (!/^[a-zA-Z0-9._%+ -]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value)) {
+                error = "Enter in valid format eg: username@domain";
+            } else if (value !== value.toLowerCase()) {
+                error = "Please enter lower case alphabets.";
+            } else if (value.length < 5) {
+                error = "Minimum 5 characters are required.";
+            } else if (value.length > 254) {
+                error = "Maximum 254 characters only.";
+            } else if (/\s/.test(value)) {
+                error = "Please ensure there are no in-between spaces.";
+            }
+        } else if (input === phoneInput) {
+            if (/[^0-9\s]/.test(value)) {
+                error = "No special characters or alphabets are allowed.";
+            } else if (value.replace(/\s/g, "").length !== 10) {
+                error = "Please enter 10 digits.";
+            }
+        } else if (input === fullNameInput || input === cityInput || input === stateInput || input === countryInput) {
+            if (/[^a-zA-Z\s]/.test(value)) {
+                error = "No special characters or numbers allowed.";
+            } else if (value.replace(/\s/g, "").length < 3) {
+                error = "Minimum 3 characters are required.";
+            }
+        }
+
+        const existingError = input.parentNode.querySelector(".error-message");
+        if (existingError) existingError.remove();
+
+        if (error) {
+            const errorMessage = document.createElement("p");
+            errorMessage.classList.add("text-red-500", "text-sm", "mt-1", "error-message");
+            errorMessage.textContent = error;
+            input.parentNode.appendChild(errorMessage);
+            return false;
+        }
+        return true;
+    }
+
+    function validateSelect(select) {
+        const value = select.value.trim();
+        let error = "";
+
+        if (!value) {
+            error = "Please select the gender.";
+        }
+
+        const existingError = select.parentNode.querySelector(".error-message");
+        if (existingError) existingError.remove();
+
+        if (error) {
+            const errorMessage = document.createElement("p");
+            errorMessage.classList.add("text-red-500", "text-sm", "mt-1", "error-message");
+            errorMessage.textContent = error;
+            select.parentNode.appendChild(errorMessage);
+            return false;
+        }
+        return true;
+    }
+
+    inputs.forEach(input => {
+        input.addEventListener("blur", () => validateInput(input));
+    });
+
+    genderSelect.addEventListener("blur", () => validateSelect(genderSelect));
+    messageInput.addEventListener("blur", () => validateInput(messageInput));
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        let valid = true;
+
+        inputs.forEach(input => {
+            if (!validateInput(input)) valid = false;
+        });
+        if (!validateSelect(genderSelect)) valid = false;
+
+        if (!checkbox.checked) {
+            alert("You must agree to the terms and conditions.");
+            valid = false;
+        }
+
+        if (valid) {
+            button.disabled = true;
+            button.textContent = "Submitting...";
+
+            new Promise((resolve) => {
+                setTimeout(() => resolve("Form submitted successfully!"), 2000);
+            }).then((message) => {
+                alert(message);
+                form.reset();
+                button.disabled = false;
+                button.textContent = "Submit Information";
+            });
+        }
+    });
+});
+
+</script>
+
+<!-- JS code for FAQ's interactivity and form validation ends here-->
+</body>
+</html>
