@@ -12,7 +12,7 @@
     
     <!-- Logo Section: -->
     <div>
-        <img src="logo-1.png" alt="startup landing page" class="w-32 md:w-40">
+        <img src="assets/logo-1.png" alt="startup landing page" class="w-32 md:w-40">
     </div>
     
     <!--Navigation Container -->
@@ -43,7 +43,7 @@
     </div>
     <div class="flex flex-col sm:flex-row space-x-8 sm:space-x-16 md:space-x-60 x-7 sm:px-12 md:px-28 py-8"> <!-- box for containing 3 elements mail , phn , location-->
         <div class="flex flex-wrap space-x-2 sm:space-x-4 md:space-x-6"> <!-- for address box-->
-            <img class="w-12 h-12" src="location.png" alt="Location Image">
+            <img class="w-12 h-12" src="assets/location.png" alt="Location Image">
             <div>
                 <h1 class="font-semibold text-2xl">Address</h1>
                 <h1>Jaipur Rajasthan INDIA</h1>
@@ -52,7 +52,7 @@
         </div> 
         <!-- for Mail-->
         <div class="flex flex-wrap space-x-2 sm:space-x-4 md:space-x-6"> <!-- for Phone box-->
-            <img class="w-12 h-12" src="phone.png" alt="Phn Image">
+            <img class="w-12 h-12" src="assets/phone.png" alt="Phn Image">
             <div>
                 <h1 class="font-semibold text-2xl">Call us</h1>
                 <h1>+91 98765 43210</h1>
@@ -60,7 +60,7 @@
         </div> 
         <!-- for phn-->
         <div class="flex flex-wrap space-x-2 sm:space-x-4 md:space-x-6"> <!-- for Mail box-->
-            <img class="w-12 h-12" src="mail.png" alt="Mail Image">
+            <img class="w-12 h-12" src="assets/mail.png" alt="Mail Image">
             <div>
                 <h1 class="font-semibold text-2xl">Email us</h1>
                 <h1>info@test.com</h1>
@@ -144,7 +144,7 @@
                 <label class="block text-gray-700 text-lg">Upload your CV/Resume</label>
                 <div class="flex items-center border-b border-gray-300 py-2 cursor-pointer">
                     <label for="file-upload" class="flex items-center cursor-pointer">
-                        <img src="cloud.png" alt="Upload Icon" class="w-4 h-4 text-gray-400 mr-2">
+                        <img src="assets/cloud.png" alt="Upload Icon" class="w-4 h-4 text-gray-400 mr-2">
                         <span class="text-gray-700 text-sm">Choose file</span>
                     </label>
                     <input type="file" id="file-upload" class="hidden">
@@ -171,7 +171,7 @@
 
 <!-- Map image-->
     <div class=" flex justify-center">
-        <img src="map.png" class="w-full">
+        <img src="assets/map.png" class="w-full">
     </div> 
 </div>
 <!-- Map image ends here-->
@@ -215,7 +215,7 @@
     <!-- FAQ 1 -->
     <div class="faq-item border-b">
         <button class="faq-button flex w-full p-4 text-left items-center space-x-2">
-            <img src="plus.png" class="faq-icon w-5 h-5 transition-all" />
+            <img src="assets/plus.png" class="faq-icon w-5 h-5 transition-all" />
             <span class="font-medium">How to contact with riders emergency?</span>
         </button>
         <div class="faq-content p-4 text-gray-600 text-start" style="display: none;">
@@ -226,7 +226,7 @@
     <!-- FAQ 2 -->
     <div class="faq-item border-b">
         <button class="faq-button flex w-full p-4 text-left items-center space-x-2">
-            <img src="plus.png" class="faq-icon w-5 h-5 transition-all" />
+            <img src="assets/plus.png" class="faq-icon w-5 h-5 transition-all" />
             <span class="font-medium">App installation failed, how to update system information?</span>
         </button>
         <div class="faq-content p-4 text-gray-600 text-start" style="display: none;">
@@ -237,7 +237,7 @@
     <!-- FAQ 3 -->
     <div class="faq-item border-b">
         <button class="faq-button flex w-full p-4 text-left items-center space-x-2">
-            <img src="plus.png" class="faq-icon w-5 h-5 transition-all" />
+            <img src="assets/plus.png" class="faq-icon w-5 h-5 transition-all" />
             <span class="font-medium">Website response taking time, how to improve?</span>
         </button>
         <div class="faq-content p-4 text-gray-600 text-start" style="display: none;">
@@ -248,7 +248,7 @@
     <!-- FAQ 4 -->
     <div class="faq-item border-b">
         <button class="faq-button flex w-full p-4 text-left items-center space-x-2">
-            <img src="plus.png" class="faq-icon w-5 h-5 transition-all" />
+            <img src="assets/plus.png" class="faq-icon w-5 h-5 transition-all" />
             <span class="font-medium">New update fixed all bugs and issues</span>
         </button>
         <div class="faq-content p-4 text-gray-600 text-start" style="display: none;">
@@ -328,7 +328,7 @@
             <div class="mt-10 flex flex-col md:flex-row items-center md:items-start justify-between border-t pt-5">
                 <!-- Logo & Copyright -->
                 <div class="flex items-center space-x-2">
-                    <img src="logo-1.png" alt="StartupLanding Logo" class="w-[12.2rem] h-[2.3rem]">
+                    <img src="assets/logo-1.png" alt="StartupLanding Logo" class="w-[12.2rem] h-[2.3rem]">
                     <span class="text-gray-600 text-center md:text-left break-words">StartupLanding &copy; 2019 YourName, Inc</span>
                 </div>
 
@@ -357,10 +357,10 @@
 
             if (content.style.display === "none" || content.style.display === "") {
                 content.style.display = "block";
-                icon.src = "minus.png";
+                icon.src = "assets/minus.png";
             } else {
                 content.style.display = "none";
-                icon.src = "plus.png";
+                icon.src = "assets/plus.png";
             }
         });
     });
